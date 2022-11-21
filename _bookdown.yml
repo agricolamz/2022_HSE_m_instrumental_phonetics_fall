@@ -1,0 +1,12 @@
+book_filename: "2022_instrumental_phonetics_fall"
+delete_merged_file: true
+language:
+  label:
+    fig: 'Picture '
+    tab: 'Table '
+  ui:
+    edit: Edit
+    ref: 'References'
+    chapter_name: ''
+output_dir: "docs"
+

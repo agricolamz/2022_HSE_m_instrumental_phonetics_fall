@@ -1,0 +1,15 @@
+bookdown::gitbook:
+  df_print: paged
+  css: style.css
+  always_allow_html: yes
+  config:
+    self_contained: yes
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Instrumental phonetics</a></li>
+    download: ["pdf"]
+    sharing: no
+    edit:
+      link: https://github.com/agricolamz/2022_HSE_m_Instrumental_phonetics/edit/master/%s
+      text: "Edit"
