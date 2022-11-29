@@ -124,7 +124,7 @@ knitr::include_graphics("images/03.10-cat-meow.png")
 ```
 
 <audio controls>
-<source src = "cat.wav">
+<source src = "https://github.com/agricolamz/2022_HSE_m_instrumental_phonetics_fall/blob/master/sounds/cat.wav?raw=true"/>
 </audio>
 
 When there is a constriction, back tube and constriction form [Helmholtz resonator](https://en.wikipedia.org/wiki/Helmholtz_resonance).
@@ -148,7 +148,7 @@ knitr::include_graphics("images/03.11-tubes.png", dpi = 100)
 
 ## Vowel formants' normalization
 
-This section is based on [@adank03].
+This section is based on [@adank03]. However, see the more detailed overview in [@flynn11].
 
 There are three possible sources of variation in vowel formants measurements [@ladefoged57; @pols73: 1095; @adank03]:
 
