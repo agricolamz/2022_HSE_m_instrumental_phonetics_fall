@@ -22,3 +22,4 @@ acoustic-vowel-normalization-procedures
 lobanov71-z-score-transformation
 vowels-package
 hw-1-due-to-23.02.2022
+hw-1-due-to-12.12.2022-2359
