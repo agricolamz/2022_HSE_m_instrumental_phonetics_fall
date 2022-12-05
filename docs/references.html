@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="vowels.html"/>
+<link rel="prev" href="spectrum-analysis.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -55,6 +55,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
@@ -98,7 +162,10 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About the course</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#recording-in-case-you-missed-the-class"><i class="fa fa-check"></i><b>1.1</b> Recording in case you missed the class</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#homeworks"><i class="fa fa-check"></i><b>1.2</b> Homeworks</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#homeworks"><i class="fa fa-check"></i><b>1.2</b> Homeworks</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#hw-1-due-to-12.12.2022-2359"><i class="fa fa-check"></i><b>1.2.1</b> HW 1 (due to 12.12.2022, 23:59):</a></li>
+</ul></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#useful-references"><i class="fa fa-check"></i><b>1.3</b> Useful references:</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="introduction-to-acoustic-phonetics.html"><a href="introduction-to-acoustic-phonetics.html"><i class="fa fa-check"></i><b>2</b> Introduction to Acoustic Phonetics</a>
@@ -120,6 +187,143 @@ div.csl-indent {
 <li class="chapter" data-level="3.1.2" data-path="vowels.html"><a href="vowels.html#how-shape-of-the-vocal-tract-influences-on-vowels-tube-model."><i class="fa fa-check"></i><b>3.1.2</b> How shape of the vocal tract influences on vowels? Tube model.</a></li>
 <li class="chapter" data-level="3.1.3" data-path="vowels.html"><a href="vowels.html#wavelength"><i class="fa fa-check"></i><b>3.1.3</b> Wavelength</a></li>
 <li class="chapter" data-level="3.1.4" data-path="vowels.html"><a href="vowels.html#other-models"><i class="fa fa-check"></i><b>3.1.4</b> Other models</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="vowels.html"><a href="vowels.html#vowel-formants-normalization"><i class="fa fa-check"></i><b>3.2</b> Vowel formants’ normalization</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="vowels.html"><a href="vowels.html#acoustic-vowel-normalization-procedures"><i class="fa fa-check"></i><b>3.2.1</b> Acoustic vowel normalization procedures</a></li>
+<li class="chapter" data-level="3.2.2" data-path="vowels.html"><a href="vowels.html#lobanov71-z-score-transformation"><i class="fa fa-check"></i><b>3.2.2</b> <span class="citation">(Lobanov 1971)</span> z-score transformation</a></li>
+<li class="chapter" data-level="3.2.3" data-path="vowels.html"><a href="vowels.html#vowels-package"><i class="fa fa-check"></i><b>3.2.3</b> <code>vowels</code> package</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sonorants.html"><a href="sonorants.html"><i class="fa fa-check"></i><b>4</b> Sonorants</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="sonorants.html"><a href="sonorants.html#earlier"><i class="fa fa-check"></i><b>4.1</b> Earlier:</a></li>
+<li class="chapter" data-level="4.2" data-path="sonorants.html"><a href="sonorants.html#semivowels"><i class="fa fa-check"></i><b>4.2</b> Semivowels</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="sonorants.html"><a href="sonorants.html#semivowels-ʋ-w-j-ɥ-ɰ"><i class="fa fa-check"></i><b>4.2.1</b> Semivowels: ʋ, w, j, ɥ, ɰ</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sonorants.html"><a href="sonorants.html#semivowels-w-ɥ"><i class="fa fa-check"></i><b>4.2.2</b> Semivowels: w, ɥ</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sonorants.html"><a href="sonorants.html#semivowels-ɹ-ɻ"><i class="fa fa-check"></i><b>4.2.3</b> Semivowels: ɹ, ɻ</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sonorants.html"><a href="sonorants.html#nasal-stops"><i class="fa fa-check"></i><b>4.3</b> Nasal Stops</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="sonorants.html"><a href="sonorants.html#nasal-stops-uvular-ɴ"><i class="fa fa-check"></i><b>4.3.1</b> Nasal Stops: uvular ɴ</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sonorants.html"><a href="sonorants.html#nasal-stops-m"><i class="fa fa-check"></i><b>4.3.2</b> Nasal Stops: m</a></li>
+<li class="chapter" data-level="4.3.3" data-path="sonorants.html"><a href="sonorants.html#nasal-stops-anti-resonance"><i class="fa fa-check"></i><b>4.3.3</b> Nasal Stops: anti-resonance</a></li>
+<li class="chapter" data-level="4.3.4" data-path="sonorants.html"><a href="sonorants.html#nasal-stops-the-main-properties"><i class="fa fa-check"></i><b>4.3.4</b> Nasal Stops: the main properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="sonorants.html"><a href="sonorants.html#laterals"><i class="fa fa-check"></i><b>4.4</b> Laterals</a></li>
+<li class="chapter" data-level="4.5" data-path="sonorants.html"><a href="sonorants.html#nasal-nasalised-and-prenasalised-vowels"><i class="fa fa-check"></i><b>4.5</b> Nasal, nasalised, and prenasalised vowels</a></li>
+<li class="chapter" data-level="4.6" data-path="sonorants.html"><a href="sonorants.html#seminar"><i class="fa fa-check"></i><b>4.6</b> Seminar</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="sonorants.html"><a href="sonorants.html#glides-vs.-vowels"><i class="fa fa-check"></i><b>4.6.1</b> Glides vs. Vowels</a></li>
+<li class="chapter" data-level="4.6.2" data-path="sonorants.html"><a href="sonorants.html#liquids"><i class="fa fa-check"></i><b>4.6.2</b> Liquids</a></li>
+<li class="chapter" data-level="4.6.3" data-path="sonorants.html"><a href="sonorants.html#nasal-stops-acoustics"><i class="fa fa-check"></i><b>4.6.3</b> Nasal Stops Acoustics</a></li>
+<li class="chapter" data-level="4.6.4" data-path="sonorants.html"><a href="sonorants.html#spectral-slices"><i class="fa fa-check"></i><b>4.6.4</b> Spectral Slices</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html"><i class="fa fa-check"></i><b>5</b> Phonations, Obstruents</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#airstream-mechanisms"><i class="fa fa-check"></i><b>5.1</b> Airstream mechanisms</a></li>
+<li class="chapter" data-level="5.2" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#phonation-types"><i class="fa fa-check"></i><b>5.2</b> Phonation types</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#breathy-phonation-example"><i class="fa fa-check"></i><b>5.2.1</b> Breathy phonation example</a></li>
+<li class="chapter" data-level="5.2.2" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#creaky-phonation-example"><i class="fa fa-check"></i><b>5.2.2</b> Creaky phonation example</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#obstruents"><i class="fa fa-check"></i><b>5.3</b> Obstruents</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#torbulence"><i class="fa fa-check"></i><b>5.3.1</b> Torbulence</a></li>
+<li class="chapter" data-level="5.3.2" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#fricatives"><i class="fa fa-check"></i><b>5.3.2</b> Fricatives</a></li>
+<li class="chapter" data-level="5.3.3" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#stops"><i class="fa fa-check"></i><b>5.3.3</b> Stops</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#practical-analysis"><i class="fa fa-check"></i><b>5.4</b> Practical analysis</a></li>
+<li class="chapter" data-level="5.5" data-path="phonations-obstruents.html"><a href="phonations-obstruents.html#plosives-cd-and-vot"><i class="fa fa-check"></i><b>5.5</b> Plosives: CD and VOT</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html"><i class="fa fa-check"></i><b>6</b> Spectrum analysis</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#vowels-1"><i class="fa fa-check"></i><b>6.1</b> Vowels</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section"><i class="fa fa-check"></i><b>6.1.1</b> </a></li>
+<li class="chapter" data-level="6.1.2" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-1"><i class="fa fa-check"></i><b>6.1.2</b> </a></li>
+<li class="chapter" data-level="6.1.3" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-2"><i class="fa fa-check"></i><b>6.1.3</b> </a></li>
+<li class="chapter" data-level="6.1.4" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-3"><i class="fa fa-check"></i><b>6.1.4</b> </a></li>
+<li class="chapter" data-level="6.1.5" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-4"><i class="fa fa-check"></i><b>6.1.5</b> </a></li>
+<li class="chapter" data-level="6.1.6" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-5"><i class="fa fa-check"></i><b>6.1.6</b> </a></li>
+<li class="chapter" data-level="6.1.7" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-6"><i class="fa fa-check"></i><b>6.1.7</b> </a></li>
+<li class="chapter" data-level="6.1.8" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-7"><i class="fa fa-check"></i><b>6.1.8</b> </a></li>
+<li class="chapter" data-level="6.1.9" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-8"><i class="fa fa-check"></i><b>6.1.9</b> </a></li>
+<li class="chapter" data-level="6.1.10" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-9"><i class="fa fa-check"></i><b>6.1.10</b> </a></li>
+<li class="chapter" data-level="6.1.11" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-10"><i class="fa fa-check"></i><b>6.1.11</b> </a></li>
+<li class="chapter" data-level="6.1.12" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-11"><i class="fa fa-check"></i><b>6.1.12</b> </a></li>
+<li class="chapter" data-level="6.1.13" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-12"><i class="fa fa-check"></i><b>6.1.13</b> </a></li>
+<li class="chapter" data-level="6.1.14" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-13"><i class="fa fa-check"></i><b>6.1.14</b> </a></li>
+<li class="chapter" data-level="6.1.15" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-14"><i class="fa fa-check"></i><b>6.1.15</b> </a></li>
+<li class="chapter" data-level="6.1.16" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-15"><i class="fa fa-check"></i><b>6.1.16</b> </a></li>
+<li class="chapter" data-level="6.1.17" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-16"><i class="fa fa-check"></i><b>6.1.17</b> </a></li>
+<li class="chapter" data-level="6.1.18" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-17"><i class="fa fa-check"></i><b>6.1.18</b> </a></li>
+<li class="chapter" data-level="6.1.19" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-18"><i class="fa fa-check"></i><b>6.1.19</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#consonants"><i class="fa fa-check"></i><b>6.2</b> Consonants</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-19"><i class="fa fa-check"></i><b>6.2.1</b> </a></li>
+<li class="chapter" data-level="6.2.2" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-20"><i class="fa fa-check"></i><b>6.2.2</b> </a></li>
+<li class="chapter" data-level="6.2.3" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-21"><i class="fa fa-check"></i><b>6.2.3</b> </a></li>
+<li class="chapter" data-level="6.2.4" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-22"><i class="fa fa-check"></i><b>6.2.4</b> </a></li>
+<li class="chapter" data-level="6.2.5" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-23"><i class="fa fa-check"></i><b>6.2.5</b> </a></li>
+<li class="chapter" data-level="6.2.6" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-24"><i class="fa fa-check"></i><b>6.2.6</b> </a></li>
+<li class="chapter" data-level="6.2.7" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-25"><i class="fa fa-check"></i><b>6.2.7</b> </a></li>
+<li class="chapter" data-level="6.2.8" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-26"><i class="fa fa-check"></i><b>6.2.8</b> </a></li>
+<li class="chapter" data-level="6.2.9" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-27"><i class="fa fa-check"></i><b>6.2.9</b> </a></li>
+<li class="chapter" data-level="6.2.10" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-28"><i class="fa fa-check"></i><b>6.2.10</b> </a></li>
+<li class="chapter" data-level="6.2.11" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-29"><i class="fa fa-check"></i><b>6.2.11</b> </a></li>
+<li class="chapter" data-level="6.2.12" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-30"><i class="fa fa-check"></i><b>6.2.12</b> </a></li>
+<li class="chapter" data-level="6.2.13" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-31"><i class="fa fa-check"></i><b>6.2.13</b> </a></li>
+<li class="chapter" data-level="6.2.14" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-32"><i class="fa fa-check"></i><b>6.2.14</b> </a></li>
+<li class="chapter" data-level="6.2.15" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-33"><i class="fa fa-check"></i><b>6.2.15</b> </a></li>
+<li class="chapter" data-level="6.2.16" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-34"><i class="fa fa-check"></i><b>6.2.16</b> </a></li>
+<li class="chapter" data-level="6.2.17" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-35"><i class="fa fa-check"></i><b>6.2.17</b> </a></li>
+<li class="chapter" data-level="6.2.18" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-36"><i class="fa fa-check"></i><b>6.2.18</b> </a></li>
+<li class="chapter" data-level="6.2.19" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-37"><i class="fa fa-check"></i><b>6.2.19</b> </a></li>
+<li class="chapter" data-level="6.2.20" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-38"><i class="fa fa-check"></i><b>6.2.20</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#stress"><i class="fa fa-check"></i><b>6.3</b> Stress</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-39"><i class="fa fa-check"></i><b>6.3.1</b> </a></li>
+<li class="chapter" data-level="6.3.2" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-40"><i class="fa fa-check"></i><b>6.3.2</b> </a></li>
+<li class="chapter" data-level="6.3.3" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-41"><i class="fa fa-check"></i><b>6.3.3</b> </a></li>
+<li class="chapter" data-level="6.3.4" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-42"><i class="fa fa-check"></i><b>6.3.4</b> </a></li>
+<li class="chapter" data-level="6.3.5" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-43"><i class="fa fa-check"></i><b>6.3.5</b> </a></li>
+<li class="chapter" data-level="6.3.6" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-44"><i class="fa fa-check"></i><b>6.3.6</b> </a></li>
+<li class="chapter" data-level="6.3.7" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-45"><i class="fa fa-check"></i><b>6.3.7</b> </a></li>
+<li class="chapter" data-level="6.3.8" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-46"><i class="fa fa-check"></i><b>6.3.8</b> </a></li>
+<li class="chapter" data-level="6.3.9" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-47"><i class="fa fa-check"></i><b>6.3.9</b> </a></li>
+<li class="chapter" data-level="6.3.10" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-48"><i class="fa fa-check"></i><b>6.3.10</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#guess-an-animal"><i class="fa fa-check"></i><b>6.4</b> Guess an animal</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-49"><i class="fa fa-check"></i><b>6.4.1</b> </a></li>
+<li class="chapter" data-level="6.4.2" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-50"><i class="fa fa-check"></i><b>6.4.2</b> </a></li>
+<li class="chapter" data-level="6.4.3" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-51"><i class="fa fa-check"></i><b>6.4.3</b> </a></li>
+<li class="chapter" data-level="6.4.4" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-52"><i class="fa fa-check"></i><b>6.4.4</b> </a></li>
+<li class="chapter" data-level="6.4.5" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-53"><i class="fa fa-check"></i><b>6.4.5</b> </a></li>
+<li class="chapter" data-level="6.4.6" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-54"><i class="fa fa-check"></i><b>6.4.6</b> </a></li>
+<li class="chapter" data-level="6.4.7" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-55"><i class="fa fa-check"></i><b>6.4.7</b> </a></li>
+<li class="chapter" data-level="6.4.8" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-56"><i class="fa fa-check"></i><b>6.4.8</b> </a></li>
+<li class="chapter" data-level="6.4.9" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-57"><i class="fa fa-check"></i><b>6.4.9</b> </a></li>
+<li class="chapter" data-level="6.4.10" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-58"><i class="fa fa-check"></i><b>6.4.10</b> </a></li>
+<li class="chapter" data-level="6.4.11" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-59"><i class="fa fa-check"></i><b>6.4.11</b> </a></li>
+<li class="chapter" data-level="6.4.12" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-60"><i class="fa fa-check"></i><b>6.4.12</b> </a></li>
+<li class="chapter" data-level="6.4.13" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-61"><i class="fa fa-check"></i><b>6.4.13</b> </a></li>
+<li class="chapter" data-level="6.4.14" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-62"><i class="fa fa-check"></i><b>6.4.14</b> </a></li>
+<li class="chapter" data-level="6.4.15" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-63"><i class="fa fa-check"></i><b>6.4.15</b> </a></li>
+<li class="chapter" data-level="6.4.16" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-64"><i class="fa fa-check"></i><b>6.4.16</b> </a></li>
+<li class="chapter" data-level="6.4.17" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-65"><i class="fa fa-check"></i><b>6.4.17</b> </a></li>
+<li class="chapter" data-level="6.4.18" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-66"><i class="fa fa-check"></i><b>6.4.18</b> </a></li>
+<li class="chapter" data-level="6.4.19" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-67"><i class="fa fa-check"></i><b>6.4.19</b> </a></li>
+<li class="chapter" data-level="6.4.20" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-68"><i class="fa fa-check"></i><b>6.4.20</b> </a></li>
+<li class="chapter" data-level="6.4.21" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-69"><i class="fa fa-check"></i><b>6.4.21</b> </a></li>
+<li class="chapter" data-level="6.4.22" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-70"><i class="fa fa-check"></i><b>6.4.22</b> </a></li>
+<li class="chapter" data-level="6.4.23" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-71"><i class="fa fa-check"></i><b>6.4.23</b> </a></li>
+<li class="chapter" data-level="6.4.24" data-path="spectrum-analysis.html"><a href="spectrum-analysis.html#section-72"><i class="fa fa-check"></i><b>6.4.24</b> </a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -145,19 +349,37 @@ div.csl-indent {
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div class="csl-entry">
+Adank, P. M. 2003. <span>“Vowel Normalization. A Perceptual Acoustic Study of Dutch Vowels.”</span> PhD thesis, Ponsen &amp; Looijen bv, Wageningen.
+</div>
+<div class="csl-entry">
 Ashby, M., and J. Maidment. 2005. <em>Introducing Phonetic Science</em>. Cambridge University Press.
 </div>
 <div class="csl-entry">
 Bickford, A. C., and R. Floyd. 2006. <em>Articulatory Phonetics: Tools for Analyzing the World’s Languages</em>. SIL International.
 </div>
 <div class="csl-entry">
+Bladon, RAW. 1982. <span>“Arguments Against Formants in the Auditory Representation of Speech.”</span> <em>The Representation of Speech in the Peripheral Auditory System</em>.
+</div>
+<div class="csl-entry">
+Bladon, RAW, and Björn Lindblom. 1981. <span>“Modeling the Judgment of Vowel Quality Differences.”</span> <em>The Journal of the Acoustical Society of America</em> 69 (5): 1414–22.
+</div>
+<div class="csl-entry">
 Boersma, P., and D. Weenink. 2021. <span>“Praat: Doing Phonetics by Computer.”</span> <a href="http://www.praat.org/">http://www.praat.org/</a>.
+</div>
+<div class="csl-entry">
+Disner, S. F. 1980. <span>“Evaluation of Vowel Normalization Procedures.”</span> <em>The Journal of the Acoustical Society of America</em> 67 (1): 253–61.
 </div>
 <div class="csl-entry">
 Fant, G. 1960b. <em>Acoustic Theory of Speech Production</em>. Paris: Mouton.
 </div>
 <div class="csl-entry">
 ———. 1960a. <em>Acoustic Theory of Speech Production</em>. 2. Walter de Gruyter.
+</div>
+<div class="csl-entry">
+———. 1975. <span>“Non-Uniform Vowel Normalization.”</span> <em>STL-QPSR</em> 16 (2-3): 1–19.
+</div>
+<div class="csl-entry">
+Flynn, N. 2011. <span>“Comparing Vowel Formant Normalisation Procedures.”</span> <em>York Papers in Linguistics Series</em> 2 (11): 1–28.
 </div>
 <div class="csl-entry">
 Fridland, Valerie, and Tyler Kendall. 2022. <span>“Managing Sociophonetic Data in a Study of Regional Variation.”</span> In <em>The Open Handbook of Linguistic Data Management</em>, edited by Andrea L. Berez-Kroeker, Bradley McDonnell, Eve Koller, and Lauren B. Collister, 237–47. The MIT Press. <a href="https://doi.org/10.7551/mitpress/12200.001.0001">https://doi.org/10.7551/mitpress/12200.001.0001</a>.
@@ -167,6 +389,9 @@ Fuchs, Susanne, Martine Toda, and Marzena Żygis. 2010. <em>Turbulent Sounds: An
 </div>
 <div class="csl-entry">
 Fulop, S. A. 2011. <em>Speech Spectrum Analysis</em>. Springer Science &amp; Business Media.
+</div>
+<div class="csl-entry">
+Gerstman, Louis. 1968. <span>“Classification of Self-Normalized Vowels.”</span> <em>IEEE Transactions on Audio and Electroacoustics</em> 16 (1): 78–80.
 </div>
 <div class="csl-entry">
 Gick, B., I. Wilson, and D. Derrick. 2012. <em>Articulatory Phonetics</em>. John Wiley &amp; Sons.
@@ -184,19 +409,52 @@ Gussenhoven, C., and H. Jacobs. 2017. <em>Understanding Phonology</em>. Routledg
 Harrington, J. 2010. <em>Phonetic Analysis of Speech Corpora</em>. John Wiley &amp; Sons.
 </div>
 <div class="csl-entry">
+Hindle, D. 1978. <span>“Approaches to Vowel Normalization in the Study of Natural Speech.”</span> <em>Linguistic Variation: Models and Methods</em>, 161–71.
+</div>
+<div class="csl-entry">
 Hunt, Elisabeth Hon. 2009. <span>“Acoustic Characterization of the Glides/j/and/w/in American English.”</span> PhD thesis, Massachusetts Institute of Technology.
 </div>
 <div class="csl-entry">
 Johnson, K. 2004. <span>“Acoustic and Auditory Phonetics.”</span> <em>Phonetica</em> 61 (1): 56–58.
 </div>
 <div class="csl-entry">
+Kania, Romain E, Stéphane Hans, Dana M Hartl, Philippe Clement, Lise Crevier-Buchman, and Daniel F Brasnu. 2004. <span>“Variability of Electroglottographic Glottal Closed Quotients: Necessity of Standardization to Obtain Normative Values.”</span> <em>Archives of Otolaryngology–Head &amp; Neck Surgery</em> 130 (3): 349–52.
+</div>
+<div class="csl-entry">
+Klatt, D. 1982. <span>“Prediction of Perceived Phonetic Distance from Critical-Band Spectra: <span>A</span> First Step.”</span> In <em>ICASSP’82. IEEE International Conference on Acoustics, Speech, and Signal Processing</em>, 7:1278–81. IEEE.
+</div>
+<div class="csl-entry">
+Klein, W., R. Plomp, and L. C. W. Pols. 1970. <span>“Vowel Spectra, Vowel Spaces, and Vowel Identification.”</span> <em>The Journal of the Acoustical Society of America</em> 48 (4B): 999–1009.
+</div>
+<div class="csl-entry">
+Ladefoged, P., and D. E. Broadbent. 1957. <span>“Information Conveyed by Vowels.”</span> <em>The Journal of the Acoustical Society of America</em> 29 (1): 98–104.
+</div>
+<div class="csl-entry">
 Ladefoged, P., and S. F. Disner. 2012. <em>Vowels and Consonants</em>. John Wiley &amp; Sons.
+</div>
+<div class="csl-entry">
+Ladefoged, Peter. 1971. <em>Preliminaries to Linguistic Phonetics</em>. University of Chicago press.
 </div>
 <div class="csl-entry">
 Lindblom, Björn, and Ian Maddieson. 1988. <span>“Phonetic Universals in Consonant Systems.”</span> <em>Language, Speech and Mind</em> 6278.
 </div>
 <div class="csl-entry">
+Lobanov, B. M. 1971. <span>“Classification of Russian Vowels Spoken by Different Speakers.”</span> <em>The Journal of the Acoustical Society of America</em> 49 (2B): 606–8.
+</div>
+<div class="csl-entry">
 Maddieson, I., and P. Ladefoged. 1996. <em>The Sounds of the <span>W</span>orld’s Languages</em>. Malden, MA: Blackwell Publishing.
+</div>
+<div class="csl-entry">
+Miller, J. D. 1989. <span>“Auditory-Perceptual Interpretation of the Vowel.”</span> <em>The Journal of the Acoustical Society of America</em> 85 (5): 2114–34.
+</div>
+<div class="csl-entry">
+Obleser, J., A. Leaver, J. VanMeter, and J. P. Rauschecker. 2010. <span>“Segregation of Vowels and Consonants in Human Auditory Cortex: Evidence for Distributed Hierarchical Organization.”</span> <em>Frontiers in Psychology</em> 1: 232.
+</div>
+<div class="csl-entry">
+Peterson, G. E., and H. L. Barney. 1952. <span>“Control Methods Used in a Study of the Vowels.”</span> <em>The Journal of the Acoustical Society of America</em> 24 (2): 175–84.
+</div>
+<div class="csl-entry">
+Pols, L. C. W., H. R. C. Tromp, and R. Plomp. 1973. <span>“Frequency Analysis of Dutch Vowels from 50 Male Speakers.”</span> <em>The Journal of the Acoustical Society of America</em> 53 (4): 1093–1101.
 </div>
 <div class="csl-entry">
 Rorabaugh, C. B. 2010. <em>Notes on Digital Signal Processing: Practical Recipes for Design, Analysis and Implementation, Portable Documents</em>. Prentice Hall.
@@ -204,14 +462,32 @@ Rorabaugh, C. B. 2010. <em>Notes on Digital Signal Processing: Practical Recipes
 <div class="csl-entry">
 Stevens, K. N. 1972. <span>“The Quantal Nature of Speech: Evidence from Articulatory-Acoustic Data.”</span> <em>Human Communication: A Unified View</em>.
 </div>
+<div class="csl-entry">
+Syrdal, A. K., and H. S. Gopal. 1986. <span>“A Perceptual Model of Vowel Recognition Based on the Auditory Representation of American English Vowels.”</span> <em>The Journal of the Acoustical Society of America</em> 79 (4): 1086–1100.
+</div>
+<div class="csl-entry">
+Thomas, E. R. 2002. <span>“Instrumental Phonetics.”</span> In <em>The Handbook of Language Variation and Change</em>, edited by J. K. Chambers, P. Trudgill, and N. Schilling-Estes, 168–200. Oxford: Blackwell.
+</div>
+<div class="csl-entry">
+Weenink, D. J. M. 1993. <span>“Modelling Speaker Normalization by Adapting the Bias in a Neural Net.”</span> In <em>Proceedings Eurospeech93</em>, 2259–62. Berlin.
+</div>
+<div class="csl-entry">
+Weenink, David. 1997. <span>“Category <span>ART</span>: <span>A</span> Variation on Adaptive Resonance Theory Neural Networks.”</span> In <em>Proc. Institute of Phonetic Sciences University of Amsterdam</em>, 21:117–29. Citeseer.
 </div>
 </div>
+</div>
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="vowels.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spectrum-analysis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
