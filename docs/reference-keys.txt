@@ -1,3 +1,5 @@
+fig:unnamed-chunk-26
+fig:unnamed-chunk-27
 about-the-course
 recording-in-case-you-missed-the-class
 homeworks
@@ -49,8 +51,7 @@ obstruents
 torbulence
 fricatives
 stops
-practical-analysis
-plosives-cd-and-vot
+voiced-onset-time-vot
 spectrum-analysis
 vowels-1
 section
@@ -129,6 +130,3 @@ section-69
 section-70
 section-71
 section-72
-voiced-onset-time-vot
-fig:unnamed-chunk-1
-fig:unnamed-chunk-2
