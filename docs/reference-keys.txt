@@ -129,3 +129,6 @@ section-69
 section-70
 section-71
 section-72
+voiced-onset-time-vot
+fig:unnamed-chunk-1
+fig:unnamed-chunk-2

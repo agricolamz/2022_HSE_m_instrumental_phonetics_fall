@@ -5,7 +5,7 @@ editor_options:
 
 ```{r setup07, include=FALSE}
 options(digits = 3)
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 theme_set(theme_bw()+theme(text = element_text(size=18)))
 ```
@@ -123,4 +123,25 @@ from [@fant60: 73])
 
 ![](images/07.06_coarticulation.jpg)
 
-* Different varieties of stops also can be destinguished using Voiced Onset Time (VOT).
+### Voiced Onset Time (VOT)
+
+This notion was introduced in [@lisker64], very influential work:
+
+```{r, fig.cap="picture from www.connectedpapers.com"}
+knitr::include_graphics("images/07.08_vot_papers.png")
+```
+
+VOT is the timing of glottal pulsing relative to supraglottal articulation
+
+```{r, fig.cap="A graphical representation of the VOT of voiced, tenuis, and aspirated stops, Wikipedia"}
+knitr::include_graphics("images/07.09_vot.svg")
+```
+
+[@abramson17] argue that VOT is a cross-linguistically useful (and simple) measure, even if not a universal discriminator.
+
+- aspirated voiced in Hindi: pʰ, p, b and bʰ. -- both latter sound types show negative VOT, bH showing breathy voice filling before the onset of modal voice)
+- pre-aspirated in Swedish, Icelandic, Scots Gaelic and Tarascan -- period of aspiration preceding a silent CD
+- Korean: unaspirated, slightly aspirated and strongly aspirated (degree of VOT)
+- Considering a sample of languages, [@cho99] show that VOT measurements do not directly depend on sound types and oppositions, when there are ejectives in a phonological system:
+
+![](images/07.10_cho_ladefoged.png)
